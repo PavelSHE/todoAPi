@@ -15,7 +15,7 @@ namespace TodoApi.Controllers {
             if (_context.TodoItems.Count () == 0) {
                 // Create a new TodoItem if collection is empty,
                 // which means you can't delete all TodoItems.
-                for(int i = 1;i<20;i++){
+                for(int i = 1;i<10;i++){
                     _context.TodoItems.Add (new TodoItem { Name = "Item"+i.ToString() });
                 }
                 _context.SaveChanges ();
